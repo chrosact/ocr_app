@@ -1,6 +1,6 @@
-# ocr_app
+# OCR APP by Chrosact
 
-A new Flutter project.
+OCR app with live and camera option to convert image into text.
 
 ## Getting Started
 
