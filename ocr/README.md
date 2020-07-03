@@ -1,4 +1,4 @@
-# test_app
+# ocr_app
 
 A new Flutter project.
 
