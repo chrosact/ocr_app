@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:firebase_ml_vision/firebase_ml_vision.dart';
 
 class Data {
-  var iimage;
-  Data({this.iimage});
+  var text;
+  Data({this.text});
 }
+
 
 
 class SelectPage extends StatefulWidget{
@@ -48,6 +49,9 @@ class _SelectPage extends State<SelectPage>
     TextRecognizer textRecognizer = FirebaseVision.instance.textRecognizer();
     VisionText visionText = await textRecognizer.processImage(visionImage);
 
+    setState(() {
+      text = "";
+    });
     for (TextBlock block in visionText.blocks) {
 
       for (TextLine line in block.lines) {
@@ -62,7 +66,7 @@ class _SelectPage extends State<SelectPage>
     textRecognizer.close();
 
     var data =   new Data();
-    data.iimage = text;
+    data.text = text;
     Navigator.push(
       context,
       new MaterialPageRoute(builder: (context) =>  Textread(data:data)),);
@@ -164,13 +168,13 @@ class Textread extends StatefulWidget{
   @override
   final Data data;
   Textread({this.data});
-  _Textread createState()=>_Textread(data:data);
+  _Textread createState()=>_Textread(text:data);
 }
 
 class _Textread extends State<Textread>
 {
-  final Data data;
-  _Textread({this.data});
+  final Data text;
+  _Textread({this.text});
 
 
 
@@ -179,7 +183,7 @@ class _Textread extends State<Textread>
   {
     return Scaffold(
       appBar: AppBar(title:Text("Extractd Text form File")),
-      body: Text(data.iimage,style:TextStyle(fontSize: 20.0),),
+      body: Text(text.text,style:TextStyle(fontSize: 20.0),),
     );
   }
 }
