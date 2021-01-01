@@ -10,3 +10,6 @@ ML tool like OCR.
 
 ## Screenshot
 <img src="https://github.com/kosac-achyut/ocr_app/blob/master/Screenshots/1.jpeg" alt="alt text" width="360" height="640">
+<img src="https://github.com/kosac-achyut/ocr_app/blob/master/Screenshots/2.jpeg" alt="alt text" width="360" height="640">
+<img src="https://github.com/kosac-achyut/ocr_app/blob/master/Screenshots/3.jpeg" alt="alt text" width="360" height="640">
+<img src="https://github.com/kosac-achyut/ocr_app/blob/master/Screenshots/4.jpeg" alt="alt text" width="360" height="640">
