@@ -9,4 +9,4 @@ develop applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and 
 ML tool like OCR.
 
 ## Screenshot
-![alt text](https://github.com/kosac-achyut/ocr_app/blob/master/Screenshots/1.jpeg "ScreenShot 1")
+![alt text](https://github.com/kosac-achyut/ocr_app/blob/master/Screenshots/1.jpeg=250x100 "ScreenShot 1")
